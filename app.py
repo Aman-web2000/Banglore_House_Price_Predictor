@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle 
 
-pickle_in=open(r"A:\DS ML\Regression\Benguluru House price prediction\HousePrice.pkl",'rb')
+pickle_in=open("HousePrice.pkl",'rb')
 
 reg=pickle.load(pickle_in)
 
