@@ -22,7 +22,7 @@ def main():
     area_type=st.selectbox("",['Built-up  Area','Super built-up  Area','Plot  Area','Carpet  Area'])
 
     st.subheader('Number Of Rooms')
-    rooms=st.slider('',min_value=3,max_value=50,step=2)
+    rooms=st.number_input('',min_value=3,max_value=40,step=2)
 
     st.subheader('Availability')
     avail=st.radio("",['Ready To Move','Not Ready'])
