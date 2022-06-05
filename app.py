@@ -30,7 +30,7 @@ def main():
     st.subheader('Size(Sq. feet)')
     size=st.number_input('',min_value=200,max_value=3000,step=50)
     
-    input_df=pd.DataFrame(data=[[area_type,availsize,rooms]],columns=['area_type','availability','total_sqft','Total_rooms'])
+    input_df=pd.DataFrame(data=[[area_type,avail,size,rooms]],columns=['area_type','availability','total_sqft','Total_rooms'])
 
     if st.button('Predict'):
         
